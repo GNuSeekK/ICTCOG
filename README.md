@@ -2,4 +2,5 @@
 
 * 1일차 5.16 수업 업데이트
   1. **01 python programming.ipynb**
+  2. **2. Python 기초 문법 - Data Type**
 ---
