@@ -53,4 +53,26 @@ plotly는 안하게 된다면 개인적으로라도 공부할 예정.
     * 유튜브 데이터의 경우 한글 데이터로, 이전까지 했던 수치형 데이터가 아니라 문자형 데이터였다. soynlp를 통해 자연어 처리를 하는 방법을 복습하게 되었고 그 외에는 평소에 잘 사용해보지 않았던 pivot_table을 이용하는 방법을 실습하면서 한번씩 응용해보기도 하였다.
   * **6. 2 - 23 [Data Analyze] 코로나 데이터 분석**
     * folium 모듈을 이용해 지도를 처음 사용해보게 되어 의미있었던 시간. 특히 마지막에 CircleMarker를 이용해 전 세계 코로나 데이터를 한번에 볼 수 있다는 점에서 인상깊었음.
+  * **6. 3 - 01 [머신러닝] 개요**
   > 강의평 : 시간이 지날수록 모르는 내용들이 등장하여 다행히 배우는 기분이 확실히 들고 있다. 시각화 툴인 matplotlib이나 seaborn을 배우는 것과 더불어, API를 이용하는 방법도 배우고 있어 이후 내 프로젝트를 진행함에 있어서 많은 도움이 될 것이라고 생각한다. 자연어 처리의 경우에는 나의 프로그램에는 사용하지 않지만, 이후 뉴스기사를 통한 주식투자 인공지능 프로그램을 만들때 상당히 도움이 될 것이라고 생각한다.
+* 11~12일차 수업 업데이트 6.26, 6.27
+  * **3 - 02 [머신러닝] A-Z**
+    * GIGO(Garbage In Garbage Out) : 쓰레기가 들어가면 쓰레기가 나온다.
+    * 데이터 스누핑 편향 : 가지고 있는 데이터셋을 모두 활용해 새로운 데이터 세트에 대한 예측이 불안정한 현상
+    * scikit_learn - sklearn.model_selection.train_test_split : 훈련데이터와 테스트데이터를 나누는 함수
+    * pandas - pandas.cut : 계층화 시키는 함수
+    * scikit_learn - sklearn.model_selection.StratifiedShuffleSplit : 계층 분할 + Shuffle
+    * scikit_learn - sklearn.preprocessing.OrdinalEncoder : 텍스트 범주를 숫자 범주로 바꾸는 함수
+    * scikit_learn - sklearn.preprocessing.OneHotEncoder : 원핫인코딩 -> 하나만 강조
+    * 스케일링 : 단위를 통일하거나, 일정한 규정에 맞게 변경하는 것
+      * MinMax 스케일링(sklearn.preprocessing.MinMaxScaler) : 0~1사이의 값으로 맞추는 정규화(normalization)
+      * Standard 스케일링(sklearn.preprocessing.StandardScaler) : 평균이 0이고 분산이 1이되는 표준화(Generalization)
+    * scikit_learn - sklearn.pipeline.Pipeline : 파이프라인 함수 -> 전처리 및 이후 예측에 관한 것 까지 파이프라인 화 가능
+      * 주의사항 : 마지막 단계 이전은 Transformer로 fit, transform, fit_transform 메소드가 존재해야 한다.
+      * 마지막 단계에는 Tranformer(변환기)와 Estimator(추정기) 모두다 사용 가능하다.
+    * scikit_learn : sklearn.linear_model.LinearRegression : 선형회귀모델
+    * scikit_learn : sklearn.tree.DecisionTreeRegressor : 의사결정 트리
+    * scikit_learn : sklearn.model_selection.cross_val_score : 교차검증(Cross Validation)
+      * 테스트 세트를 이용하기 전, 훈련 세트 안에서 validation data를 나눠서 교차검증 하는 과정
+    * scikit_learn : sklearn.ensemble.RandomForestRegressor : 랜덤포레스트 모델
+    * scikit_learn : sklearn.model_selection.GridSearchCV : 모델에 대한 설정 매개변수인 최적의 하이퍼 파라미터를 찾는 과정(GridSearch + Cross Validation)
