@@ -77,3 +77,10 @@ plotly는 안하게 된다면 개인적으로라도 공부할 예정.
       * 테스트 세트를 이용하기 전, 훈련 세트 안에서 validation data를 나눠서 교차검증 하는 과정
     * scikit_learn : sklearn.ensemble.RandomForestRegressor : 랜덤포레스트 모델
     * scikit_learn : sklearn.model_selection.GridSearchCV : 모델에 대한 설정 매개변수인 최적의 하이퍼 파라미터를 찾는 과정(GridSearch + Cross Validation)
+  * **3 - 03 [지도학습] 종류**
+  * **3 - 04 [지도학습] 사이킷런 개요**
+  * **3 - 05 [지도학습] 분류 모델**
+    * 수업도중 헷갈렸던 정밀도와 재현율에 대해 조금 더 공부해본 결과 수업 내용에 틀린 부분을 발견하여 수정하였다. 수업 당시에 강사님도 헷갈려 하던 부분이라 계속 바꼈었는데 복습하면서 확립하게 되어 조금 더 만족스러운 결과를 얻을 수 있었다.
+    * 분류 모델에서 이용되는 다양한 scikit_learn 메소드를 공부하였다.
+  * **3 - 06 [지도학습] 회귀 모델**
+    * scikit_learn : sklearn.preprocessing.PolynomialFeatures : 다항특성 - 모든 교차항과 차수의 특성을 추가한다.
